@@ -72,13 +72,8 @@ include( 'sidebar.php' );
                       	<div class="col-md-4 col-sm-4 mb">
                       		<div class="white-panel">
                       			<div class="white-header">
-						  			<h5>SERVER LOAD</h5>
+						  			<h5>Deactivation Data</h5>
                       			</div>
-								<div class="row">
-									<div class="col-sm-6 col-xs-6 goleft">
-										<p><i class="fa fa-database"></i> 70%</p>
-									</div>
-	                      		</div>
 								<div class="give-dashboard">
                                     <?php
                                         $db = new SalesDashboard ();

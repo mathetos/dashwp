@@ -29,12 +29,11 @@ global $_rfConfig;
                 <ul class="sub">
                     <?php
                     $files = scandir( DASHWP_PATH . '/dashboards/');
+
                     foreach($files as $file) {
-                        //do your work here
-                        $name = basename($file);         // $file is set to "index.php"
                         $name = basename($file, "-dashboard.php"); // $file is set to "index"
 
-                        echo '<li><a href="' . $file . '">' . $name . '</a></li>';
+                        echo '<li><a href="' . $file . '">' . ucwords($name) . '</a></li>';
                     }
                     ?>
 
